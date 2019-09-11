@@ -1,7 +1,7 @@
 # Higher Order Function
 
 1. Go through the chanpter [05](https://eloquentjavascript.net/05_higher_order.html) of eloquent javaScript
-2. Complete the [exercise](https://eloquentjavascript.net/05_higher_order.html#h_TcUD2vzyMe) and put the solution in `exercise.js` file.
+2. Complete the [exercise](<html id="h_TcUD2vzyMe"></html>) and put the solution in `exercise.js` file.
 
 ### Flattening
 Use the reduce method in combination with the concat method to “flatten” an array of arrays into a single array that has all the elements of the original arrays.
