@@ -4,7 +4,7 @@ let arrays = [[1, 2, 3], [4, 5], [6]];
 function flatten(arr){
 	let emptyArr = [];
 
-	arr.forEach((elm, arr) => {
+	arr.forEach((elm,i, arr) => {
 		emptyArr = [...emptyArr, ...elm]
 	});
 
@@ -31,9 +31,18 @@ loop(3, n => n > 0, n => n - 1, console.log);
 // → 1
 
 // Challenge 3. Everything
-function every(array, test) {
   // Your code here.
-}
+  function every(array, test) {
+  let flag = true;
+
+  array.forEach( (elm) => {
+  	if (flag) {
+  		flag = test(elm);
+  	}
+  });
+  return flag;
+};
+
 
 console.log(every([1, 3, 5], n => n < 10));
 // → true
